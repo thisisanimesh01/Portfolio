@@ -1,0 +1,311 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Animesh Yadav- Professional Portfolio</title>
+    <script src="https://cdn.tailwindcss.com"></script>
+    <link href="https://fonts.googleapis.com/css2?family=Inter:wght@300;400;600;700;800&display=swap" rel="stylesheet">
+    <link href="https://unpkg.com/aos@2.3.1/dist/aos.css" rel="stylesheet">
+
+    <style>
+        /* Custom CSS to apply Inter font globally */
+        body {
+            font-family: 'Inter', sans-serif;
+            scroll-behavior: smooth;
+            overflow-x: hidden; /* Prevent horizontal scroll due to animations */
+        }
+        /* Smooth scrolling for anchor links */
+        html {
+            scroll-behavior: smooth;
+        }
+
+        /* Custom animation for hero section elements (initial load) */
+        .animate-fade-in-up {
+            opacity: 0;
+            transform: translateY(20px);
+            animation: fadeInUp 0.8s ease-out forwards;
+        }
+
+        .animate-delay-100 { animation-delay: 0.1s; }
+        .animate-delay-200 { animation-delay: 0.2s; }
+        .animate-delay-300 { animation-delay: 0.3s; }
+        .animate-delay-400 { animation-delay: 0.4s; }
+        .animate-delay-500 { animation-delay: 0.5s; }
+
+        @keyframes fadeInUp {
+            to {
+                opacity: 1;
+                transform: translateY(0);
+            }
+        }
+
+        /* Custom underline animation for nav links */
+        .nav-link-underline {
+            position: relative;
+        }
+        .nav-link-underline::after {
+            content: '';
+            position: absolute;
+            width: 0;
+            height: 2px;
+            bottom: -4px;
+            left: 0;
+            background-color: currentColor;
+            transition: width 0.3s ease-out;
+        }
+        .nav-link-underline:hover::after {
+            width: 100%;
+        }
+
+        /* Input focus animation */
+        .form-input-glow:focus {
+            outline: none;
+            border-color: #6366f1; /* Indigo-500 */
+            box-shadow: 0 0 0 3px rgba(99, 102, 241, 0.5); /* Indigo-500 with opacity */
+        }
+    </style>
+</head>
+<body class="bg-gray-50 text-gray-800">
+
+    <header class="bg-white shadow-lg p-4 sticky top-0 z-50">
+        <nav class="container mx-auto flex justify-between items-center">
+            <a href="#hero" class="text-3xl font-extrabold text-grey-700 rounded-lg p-2 hover:bg-indigo-50 transition duration-300">Animesh Yadav</a>
+            <ul class="flex space-x-6">
+                <li><a href="#about" class="text-gray-700 hover:text-indigo-600 font-medium rounded-md p-2 nav-link-underline">About</a></li>
+                <li><a href="#skills" class="text-gray-700 hover:text-indigo-600 font-medium rounded-md p-2 nav-link-underline">Skills</a></li>
+                <li><a href="#projects" class="text-gray-700 hover:text-indigo-600 font-medium rounded-md p-2 nav-link-underline">Projects</a></li>
+                <li><a href="#contact" class="text-gray-700 hover:text-indigo-600 font-medium rounded-md p-2 nav-link-underline">Contact</a></li>
+            </ul>
+        </nav>
+    </header>
+
+    <section id="hero" class="bg-gradient-to-r from-indigo-600 to-grey-700 text-white py-20 md:py-32 flex items-center justify-center min-h-screen-75">
+        <div class="container mx-auto text-center px-4">
+            <img src="img2.jpeg" alt="Your Profile Picture" class="rounded-full w-44 h-44 object-cover object-center mx-auto mb-8 border-4 border-white shadow-2xl animate-fade-in-up animate-delay-100">
+
+            <h1 class="text-5xl md:text-7xl font-extrabold mb-4 leading-tight animate-fade-in-up animate-delay-200">Hi, I'm <span class="text-indigo-200">Animesh Yadav</span></h1>
+            <p class="text-xl md:text-2xl mb-10 animate-fade-in-up animate-delay-300">An  <span class="font-semibold">AI & ML Enthusiast</span> turning ideas into reality.</p>
+            <a href="#projects" class="inline-block bg-white text-indigo-700 px-10 py-4 rounded-full text-lg font-semibold hover:bg-indigo-100 transition duration-300 shadow-xl transform hover:scale-105 animate-fade-in-up animate-delay-400">Explore My Work</a>
+        </div>
+    </section>
+
+    <section id="about" class="py-16 md:py-28 bg-white" data-aos="fade-up">
+        <div class="container mx-auto px-4 max-w-5xl">
+            <h2 class="text-4xl font-bold text-center text-gray-900 mb-12">About Me</h2>
+            <div class="flex flex-col md:flex-row items-center md:space-x-12">
+                <div class="md:w-1/3 mb-8 md:mb-0" data-aos="fade-right" data-aos-delay="200">
+                    <img src="img3.jpeg" alt="About Me Image" class="rounded-xl shadow-xl w-full h-auto object-cover transform hover:scale-105 transition duration-300">
+                </div>
+                <div class="md:w-2/3 text-lg leading-relaxed text-gray-700" data-aos="fade-left" data-aos-delay="400">
+                    <p class="mb-4">Hello! I’m Animesh, a driven and curious Computer Science Engineering student with a focus on Artificial Intelligence, Machine Learning, and Web Development. I believe in leveraging technology to create meaningful and scalable solutions that solve real-world problems.</p>
+                    <p class="mb-4">My journey in technology began a few years ago with a simple curiosity about how machines learn. Since then, I’ve built a range of meaningful projects—from a House Price Prediction system leveraging regression models to forecast real estate values, to a Legal Assistance Manager aimed at simplifying legal queries and document handling through AI-based search and classification. Over time, I’ve developed a strong foundation in Python, C++, Rust, and modern web technologies, enabling me to build full-stack applications and intelligent systems from the ground up.</p>
+                    <p>Outside of my professional pursuits, I enjoy [mention a hobby or interest, e.g., exploring new technologies, photography, playing board games]. I'm excited to connect and explore how my skills can contribute to your next big idea!</p>
+                </div>
+            </div>
+        </div>
+    </section>
+<section id="skills" class="py-16 md:py-28 bg-gray-50">
+  <div class="container mx-auto px-4 max-w-5xl">
+    <h2 class="text-4xl font-bold text-center text-gray-900 mb-12" data-aos="fade-down">My Skills</h2>
+    <div class="grid grid-cols-2 sm:grid-cols-3 lg:grid-cols-4 gap-8">
+      
+      <!-- Programming Languages -->
+      <div class="bg-white p-8 rounded-xl shadow-lg text-center transform hover:scale-105 hover:shadow-xl transition duration-300" data-aos="zoom-in-up" data-aos-delay="100">
+        <h3 class="text-2xl font-semibold text-gray-800 mb-3">Programming Languages</h3>
+        <p class="text-gray-600">C, C++, Python, Rust, JavaScript</p>
+      </div>
+      
+      <!-- Web Development -->
+      <div class="bg-white p-8 rounded-xl shadow-lg text-center transform hover:scale-105 hover:shadow-xl transition duration-300" data-aos="zoom-in-up" data-aos-delay="200">
+        <h3 class="text-2xl font-semibold text-gray-800 mb-3">Web Development</h3>
+        <p class="text-gray-600">HTML5, CSS3, JavaScript, Responsive Design</p>
+      </div>
+      
+      <!-- Frontend Frameworks -->
+      <div class="bg-white p-8 rounded-xl shadow-lg text-center transform hover:scale-105 hover:shadow-xl transition duration-300" data-aos="zoom-in-up" data-aos-delay="300">
+        <h3 class="text-2xl font-semibold text-gray-800 mb-3">Frontend Frameworks</h3>
+        <p class="text-gray-600">React.js, Next.js, Tailwind CSS</p>
+      </div>
+      
+      <!-- Backend Development -->
+      <div class="bg-white p-8 rounded-xl shadow-lg text-center transform hover:scale-105 hover:shadow-xl transition duration-300" data-aos="zoom-in-up" data-aos-delay="400">
+        <h3 class="text-2xl font-semibold text-gray-800 mb-3">Backend Development</h3>
+        <p class="text-gray-600">Node.js, Django, Flask, Streamlit</p>
+      </div>
+      
+      <!-- Databases -->
+      <div class="bg-white p-8 rounded-xl shadow-lg text-center transform hover:scale-105 hover:shadow-xl transition duration-300" data-aos="zoom-in-up" data-aos-delay="500">
+        <h3 class="text-2xl font-semibold text-gray-800 mb-3">Databases</h3>
+        <p class="text-gray-600">MongoDB, MySQL, Firestore</p>
+      </div>
+      
+      
+      <!-- Tools & DevOps -->
+      <div class="bg-white p-8 rounded-xl shadow-lg text-center transform hover:scale-105 hover:shadow-xl transition duration-300" data-aos="zoom-in-up" data-aos-delay="700">
+        <h3 class="text-2xl font-semibold text-gray-800 mb-3">Tools & DevOps</h3>
+        <p class="text-gray-600">Git, GitHub, Docker, AWS</p>
+      </div>
+
+    </div>
+  </div>
+</section>
+
+
+    <section id="projects" class="py-16 md:py-28 bg-white">
+        <div class="container mx-auto px-4 max-w-6xl">
+            <h2 class="text-4xl font-bold text-center text-gray-900 mb-12" data-aos="fade-down">My Projects</h2>
+            <div class="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-3 gap-10">
+                <div class="bg-white rounded-xl shadow-lg overflow-hidden transform hover:scale-105 hover:shadow-xl transition duration-300" data-aos="fade-up" data-aos-delay="100">
+                    <img src="ss1.png" alt="Project 1 Thumbnail" class="w-full h-56 object-cover">
+                    <div class="p-6">
+                        <h3 class="text-2xl font-semibold text-gray-900 mb-3">🏡 House Price Prediction</h3>
+                        <p class="text-gray-700 mb-4">A machine learning model that predicts the prices of houses based on various features such as area, location, number of rooms, etc. This project provides a good example of how real-world data can be used for predictive modeling.</p>
+                        <div class="flex flex-wrap gap-2 mb-4">
+                            <span class="bg-indigo-100 text-indigo-800 text-sm font-medium px-3 py-1 rounded-full">Python</span>
+                            <span class="bg-purple-100 text-purple-800 text-sm font-medium px-3 py-1 rounded-full">HTML, CSS, JavaScript</span>
+                            <span class="bg-green-100 text-green-800 text-sm font-medium px-3 py-1 rounded-full">Django</span>
+                            <span class="bg-blue-100 text-blue-800 text-sm font-medium px-3 py-1 rounded-full">Linear Regression</span>
+                        </div>
+                        <div class="flex justify-between items-center mt-4">
+                           
+                            <a href="https://github.com/thisisanimesh01/House-Price-Prediction" target="_blank" class="text-gray-600 hover:text-gray-900 font-semibold transition duration-300">GitHub Repo &rarr;</a>
+                        </div>
+                    </div>
+                </div>
+
+                <div class="bg-white rounded-xl shadow-lg overflow-hidden transform hover:scale-105 hover:shadow-xl transition duration-300" data-aos="fade-up" data-aos-delay="200">
+                    <img src='img.png' alt="Project 2 Thumbnail" class="w-full h-56 object-cover">
+                    <div class="p-6">
+                        <h3 class="text-2xl font-semibold text-gray-900 mb-3">📜 Legal Document Assistant</h3>
+                        <p class="text-gray-700 mb-4">An AI-driven legal assistant that helps analyze legal documents and extract valuable insights, summaries, and even answer specific questions about the documents. It's designed to help both individuals and professionals quickly get relevant information from lengthy legal text.</p>
+                        <div class="flex flex-wrap gap-2 mb-4">
+                            <span class="bg-indigo-100 text-indigo-800 text-sm font-medium px-3 py-1 rounded-full">HTML, CSS, JavaScript</span>
+                            <span class="bg-purple-100 text-purple-800 text-sm font-medium px-3 py-1 rounded-full">Bootstrap</span>
+                            <span class="bg-green-100 text-green-800 text-sm font-medium px-3 py-1 rounded-full">Python</span>
+                            <span class="bg-blue-100 text-blue-800 text-sm font-medium px-3 py-1 rounded-full">Celery</span>
+                        </div>
+                        <div class="flex justify-between items-center mt-4">
+                           
+                            <a href="https://github.com/thisisanimesh01/Legal_Document_Assistant" target="_blank" class="text-gray-600 hover:text-gray-900 font-semibold transition duration-300">GitHub Repo &rarr;</a>
+                        </div>
+                    </div>
+                </div>
+
+                <div class="bg-white rounded-xl shadow-lg overflow-hidden transform hover:scale-105 hover:shadow-xl transition duration-300" data-aos="fade-up" data-aos-delay="300">
+                    <img src="/Users/animesh/Desktop/python/ss3.png" alt="Project 3 Thumbnail" class="w-full h-56 object-cover">
+                    <div class="p-6">
+                        <h3 class="text-2xl font-semibold text-gray-900 mb-3">🤖Doubt Bot</h3>
+                        <p class="text-gray-700 mb-4">An intelligent and interactive web-based assistant that helps you find answers to your questions using cutting-edge AI technology.<br>
+  Doubt_BOT is your go-to tool for real-time Q&A powered by advanced language models.
+</p></p>
+                        <div class="flex flex-wrap gap-2 mb-4">
+                            <span class="bg-indigo-100 text-indigo-800 text-sm font-medium px-3 py-1 rounded-full">Integrated AI Model</span>
+                            <span class="bg-purple-100 text-purple-800 text-sm font-medium px-3 py-1 rounded-full">Custom Styling</span>
+                            <span class="bg-green-100 text-green-800 text-sm font-medium px-3 py-1 rounded-full">Secure API Key Handlin</span>
+                            <span class="bg-blue-100 text-blue-800 text-sm font-medium px-3 py-1 rounded-full">HTML, CSS, JavaScript</span>
+                        </div>
+                        <div class="flex justify-between items-center mt-4">
+                          
+                            <a href="https://github.com/thisisanimesh01/Doubt_BOT" target="_blank" class="text-gray-600 hover:text-gray-900 font-semibold transition duration-300">GitHub Repo &rarr;</a>
+                        </div>
+                    </div>
+                </div>
+                </div>
+        </div>
+    </section>
+
+    <section id="contact" class="py-16 md:py-28 bg-gray-50" data-aos="fade-up">
+        <div class="container mx-auto px-4 max-w-3xl">
+            <h2 class="text-4xl font-bold text-center text-gray-900 mb-12" data-aos="fade-down">Get In Touch</h2>
+            <div class="bg-white p-8 md:p-12 rounded-xl shadow-lg" data-aos="fade-in" data-aos-delay="200">
+                <p class="text-lg text-center text-gray-700 mb-8">I'm always eager to discuss new projects, creative ideas, or opportunities to be part of your vision. Let's connect!</p>
+                <form class="space-y-6">
+                    <div>
+                        <label for="name" class="block text-sm font-medium text-gray-700 mb-1">Name</label>
+                        <input type="text" id="name" name="name" class="mt-1 block w-full p-3 border border-gray-300 rounded-md shadow-sm focus:ring-indigo-500 focus:border-indigo-500 outline-none form-input-glow transition duration-200" placeholder="Your Name">
+                    </div>
+                    <div>
+                        <label for="email" class="block text-sm font-medium text-gray-700 mb-1">Email</label>
+                        <input type="email" id="email" name="email" class="mt-1 block w-full p-3 border border-gray-300 rounded-md shadow-sm focus:ring-indigo-500 focus:border-indigo-500 outline-none form-input-glow transition duration-200" placeholder="your.email@example.com">
+                    </div>
+                    <div>
+                        <label for="message" class="block text-sm font-medium text-gray-700 mb-1">Message</label>
+                        <textarea id="message" name="message" rows="6" class="mt-1 block w-full p-3 border border-gray-300 rounded-md shadow-sm focus:ring-indigo-500 focus:border-indigo-500 outline-none form-input-glow transition duration-200" placeholder="Your message..."></textarea>
+                    </div>
+                    <button type="submit" class="w-full bg-gradient-to-r from-indigo-600 to-purple-700 text-white px-6 py-3 rounded-lg text-lg font-semibold hover:from-indigo-700 hover:to-purple-800 transition duration-300 shadow-md transform hover:scale-105">Send Message</button>
+                </form>
+                <div class="mt-10 text-center text-gray-600">
+                    <p>You can also find me on:</p>
+                    <div class="flex justify-center space-x-6 mt-4 text-2xl">
+                        <a href="https://github.com/thisisanimesh01" target="_blank" class="text-gray-700 hover:text-indigo-600 transition duration-300 transform hover:scale-125">
+                            <svg xmlns="http://www.w3.org/2000/svg" width="24" height="24" viewBox="0 0 24 24" fill="currentColor"><path d="M12 0c-6.626 0-12 5.373-12 12 0 5.302 3.438 9.8 8.207 11.387.599.111.793-.261.793-.577v-2.234c-3.338.726-4.033-1.416-4.033-1.416-.546-1.387-1.333-1.756-1.333-1.756-1.089-.745.083-.729.083-.729 1.205.084 1.839 1.237 1.839 1.237 1.07 1.834 2.807 1.304 3.492.997.107-.775.418-1.305.762-1.604-2.665-.305-5.467-1.334-5.467-5.931 0-1.311.469-2.381 1.236-3.221-.124-.303-.535-1.524.117-3.176 0 0 1.008-.322 3.301 1.23.957-.266 1.983-.399 3.003-.404 1.02.005 2.047.138 3.006.404 2.291-1.552 3.297-1.23 3.297-1.23.653 1.653.242 2.874.118 3.176.77.84 1.235 1.911 1.235 3.221 0 4.609-2.807 5.624-5.479 5.921.43.372.823 1.102.823 2.222v3.293c0 .319.192.694.801.576 4.765-1.589 8.196-6.086 8.196-11.386 0-6.627-5.373-12-12-12z"/></svg>
+                        </a>
+                        <a href="https://www.linkedin.com/in/animesh-yadav-39460b276/" target="_blank" class="text-gray-700 hover:text-indigo-600 transition duration-300 transform hover:scale-125">
+                            <svg xmlns="http://www.w3.org/2000/svg" width="24" height="24" viewBox="0 0 24 24" fill="currentColor"><path d="M19 0h-14c-2.761 0-5 2.239-5 5v14c0 2.761 2.239 5 5 5h14c2.762 0 5-2.239 5-5v-14c0-2.761-2.238-5-5-5zm-11 19h-3v-11h3v11zm-1.5-12.268c-.966 0-1.75-.79-1.75-1.764s.784-1.764 1.75-1.764 1.75.79 1.75 1.764-.783 1.764-1.75 1.764zm13.5 12.268h-3v-5.604c0-3.368-4-3.113-4 0v5.604h-3v-11h3v1.765c1.396-2.586 7-2.777 7 2.476v6.759z"/></svg>
+                        </a>
+                        </div>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <footer class="bg-gray-900 text-white py-8" data-aos="fade-in">
+        <div class="container mx-auto text-center px-4">
+            <p>&copy; 2025 Your Name. All rights reserved.</p>
+            <p class="mt-2 text-sm text-gray-400">Crafted with <span class="text-red-500">&hearts;</span> and modern web technologies.</p>
+        </div>
+    </footer>
+
+    <script src="https://unpkg.com/aos@2.3.1/dist/aos.js"></script>
+    <script>
+        // Initialize AOS
+        AOS.init({
+            duration: 1000,     // animation duration
+            once: false,        // animation will happen every time you scroll up or down
+            mirror: true,       // elements will animate out while scrolling past them
+            offset: 300,        // NEW: Trigger animation when 300px from the bottom of the viewport
+        });
+
+        // Smooth scrolling for navigation links
+        document.querySelectorAll('a[href^="#"]').forEach(anchor => {
+            anchor.addEventListener('click', function (e) {
+                e.preventDefault();
+                document.querySelector(this.getAttribute('href')).scrollIntoView({
+                    behavior: 'smooth'
+                });
+            });
+        });
+
+        // Basic form submission handling (for demonstration, won't send actual email without backend)
+        document.querySelector('#contact form').addEventListener('submit', function(e) {
+            e.preventDefault();
+            const name = document.getElementById('name').value;
+            const email = document.getElementById('email').value;
+            const message = document.getElementById('message').value;
+
+            console.log('Form Submitted:', { name, email, message });
+
+            const contactSection = document.getElementById('contact');
+            let feedbackMessage = contactSection.querySelector('.feedback-message');
+            if (!feedbackMessage) {
+                feedbackMessage = document.createElement('div');
+                feedbackMessage.className = 'feedback-message mt-4 p-3 bg-green-100 text-green-800 rounded-md text-center hidden';
+                contactSection.querySelector('.bg-white').appendChild(feedbackMessage);
+            }
+
+            feedbackMessage.textContent = 'Thank you for your message, ' + name + '! I will get back to you soon.';
+            feedbackMessage.classList.remove('hidden');
+            feedbackMessage.classList.add('block');
+
+            // Hide message after a few seconds
+            setTimeout(() => {
+                feedbackMessage.classList.remove('block');
+                feedbackMessage.classList.add('hidden');
+            }, 5000);
+
+            this.reset(); // Clear the form
+        });
+    </script>
+</body>
+</html>
