@@ -47,12 +47,6 @@ export default function Hero({ openModal }) {
 
           {/* ── LEFT — Text ── */}
           <div className="hero-left">
-            {/* Status badge */}
-            <div className="hero-badge hero-anim-1">
-              <span className="hero-badge-dot" />
-              Currently Building AI Agents &amp; Intelligent Systems
-            </div>
-
             {/* Name */}
             <h1 className="hero-name hero-anim-2">
               Animesh<br />Yadav
