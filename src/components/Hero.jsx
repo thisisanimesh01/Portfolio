@@ -102,7 +102,7 @@ export default function Hero({ openModal }) {
           {/* ── RIGHT — Clean photo, no badge ── */}
           <div className="hero-photo-wrap hero-anim-photo">
             <div className="hero-photo-card">
-              <img src="/animesh.jpg" alt="Animesh Yadav — AI Engineer & Backend Developer" />
+              <img src={`${import.meta.env.BASE_URL}animesh.jpg`} alt="Animesh Yadav — AI Engineer & Backend Developer" />
               {/* Subtle corner accent line — purely decorative, no emoji */}
               <div className="hero-photo-accent" />
             </div>

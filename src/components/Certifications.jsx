@@ -1,10 +1,10 @@
 const CERTS = [
-  { issuer: 'IBM', name: 'Introduction to Data Analytics', file: '/certs/cert_dataanalytics.png' },
-  { issuer: 'IBM', name: 'Generative AI: Introduction & Applications', file: '/certs/cert_genai.png' },
-  { issuer: 'Duke University', name: 'Introduction to Machine Learning', file: '/certs/cert_ml.png' },
-  { issuer: 'Google', name: 'Foundations of Project Management', file: '/certs/cert_projectmanagement.png' },
-  { issuer: 'University of Colorado', name: 'The Structured Query Language (SQL)', file: '/certs/cert_sql.png' },
-  { issuer: 'Vanderbilt University', name: 'Introduction to Programming with MATLAB', file: '/certs/cert_matlab.png' },
+  { issuer: 'IBM', name: 'Introduction to Data Analytics', file: 'certs/cert_dataanalytics.png' },
+  { issuer: 'IBM', name: 'Generative AI: Introduction & Applications', file: 'certs/cert_genai.png' },
+  { issuer: 'Duke University', name: 'Introduction to Machine Learning', file: 'certs/cert_ml.png' },
+  { issuer: 'Google', name: 'Foundations of Project Management', file: 'certs/cert_projectmanagement.png' },
+  { issuer: 'University of Colorado', name: 'The Structured Query Language (SQL)', file: 'certs/cert_sql.png' },
+  { issuer: 'Vanderbilt University', name: 'Introduction to Programming with MATLAB', file: 'certs/cert_matlab.png' },
 ];
 
 export default function Certifications({ openModal }) {
@@ -22,7 +22,7 @@ export default function Certifications({ openModal }) {
             <div
               key={c.name}
               className={`cert-card reveal reveal-delay-${(i % 3) + 1}`}
-              onClick={() => openModal('cert', c.file)}
+              onClick={() => openModal('cert', `${import.meta.env.BASE_URL}${c.file}`)}
             >
               <div>
                 <div className="cert-issuer">{c.issuer}</div>

@@ -16,7 +16,7 @@ export default function Modal({ modal, closeModal }) {
             <div className="resume-options">
               <a
                 className="resume-option"
-                href="/resume_aiml.png"
+                href={`${import.meta.env.BASE_URL}resume_aiml.png`}
                 download="Animesh_Yadav_Resume_AIML.png"
               >
                 <span className="resume-option-icon">🧠</span>
@@ -28,7 +28,7 @@ export default function Modal({ modal, closeModal }) {
               </a>
               <a
                 className="resume-option"
-                href="/resume_backend.png"
+                href={`${import.meta.env.BASE_URL}resume_backend.png`}
                 download="Animesh_Yadav_Resume_Backend.png"
               >
                 <span className="resume-option-icon">⚙️</span>

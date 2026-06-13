@@ -1,16 +1,189 @@
-# React + Vite
+# 🚀 Animesh Yadav Portfolio
 
-This template provides a minimal setup to get React working in Vite with HMR and some ESLint rules.
+A modern, responsive portfolio website showcasing my work in **Artificial Intelligence, Machine Learning, Backend Development, System Design, and Open Source Engineering**.
 
-Currently, two official plugins are available:
+Built with React and Vite, this portfolio highlights my projects, experience, certifications, achievements, and technical skills through an interactive and visually appealing interface.
 
-- [@vitejs/plugin-react](https://github.com/vitejs/vite-plugin-react/blob/main/packages/plugin-react) uses [Oxc](https://oxc.rs)
-- [@vitejs/plugin-react-swc](https://github.com/vitejs/vite-plugin-react/blob/main/packages/plugin-react-swc) uses [SWC](https://swc.rs/)
+---
 
-## React Compiler
+## 🌐 Live Website
 
-The React Compiler is not enabled on this template because of its impact on dev & build performances. To add it, see [this documentation](https://react.dev/learn/react-compiler/installation).
+Coming Soon
 
-## Expanding the ESLint configuration
+---
 
-If you are developing a production application, we recommend using TypeScript with type-aware lint rules enabled. Check out the [TS template](https://github.com/vitejs/vite/tree/main/packages/create-vite/template-react-ts) for information on how to integrate TypeScript and [`typescript-eslint`](https://typescript-eslint.io) in your project.
+## 👨‍💻 About Me
+
+I'm **Animesh Yadav**, a Computer Science (AI & ML) undergraduate passionate about:
+
+* Artificial Intelligence
+* Machine Learning
+* Large Language Models (LLMs)
+* Backend Development
+* System Design
+* Open Source Development
+
+I enjoy building intelligent products, scalable systems, and real-world software solutions that create meaningful impact.
+
+---
+
+## ✨ Features
+
+* Modern responsive design
+* Interactive UI & animations
+* Project showcase section
+* Skills & technologies overview
+* Experience timeline
+* Certifications & achievements
+* GitHub activity highlights
+* Contact section
+* Mobile-friendly interface
+
+---
+
+## 🛠️ Tech Stack
+
+### Frontend
+
+* React.js
+* Vite
+* JavaScript
+* HTML5
+* CSS3
+
+### Design
+
+* Responsive UI
+* Modern animations
+* Glassmorphism effects
+* Clean visual hierarchy
+
+### Development Tools
+
+* Git
+* GitHub
+* VS Code
+
+---
+
+## 📂 Featured Projects
+
+### 🤖 Friday – Personal AI Assistant
+
+Memory-enabled AI assistant with plugin architecture, task automation, contextual conversations, and API integrations.
+
+### ⚖️ Legal Document Assistant
+
+AI-powered web application that summarizes legal PDFs and answers user questions using Large Language Models.
+
+### 🏆 Sports Intelligence Chatbot
+
+RAG-based sports chatbot using FAISS, Hugging Face embeddings, and local knowledge retrieval.
+
+### ✉️ ColdConnect
+
+Cold outreach automation platform with Gmail integration, resume attachment automation, and tracking analytics.
+
+### 🧠 ResLSTM-BrainNet
+
+Deep learning framework for brain tumor detection using MRI images with explainable AI visualization.
+
+### 🐉 Dragon Programming Language
+
+Custom interpreted programming language featuring lexer, parser, AST generation, and execution engine.
+
+### 🦀 Rust Shell
+
+Unix-inspired command-line shell built from scratch using Rust.
+
+---
+
+## 📜 Certifications
+
+* Duke University — Introduction to Machine Learning
+* IBM — Generative AI: Introduction and Applications
+* IBM — Introduction to Data Analytics
+* Google — Foundations of Project Management
+* University of Colorado Boulder — SQL
+* Vanderbilt University — Introduction to Programming with MATLAB
+
+---
+
+## 🏅 Achievements
+
+* 300+ DSA Problems Solved
+* Team Leader of InnovateX
+* AI For Impact APAC Hackathon Participant
+* NITS HACKS 7.0 Participant
+* Kraf Think 2025 Participant
+* Open Source Contributor
+* Software Development Engineer Intern at Bluestock Fintech
+
+---
+
+## 🚀 Getting Started
+
+### Clone the Repository
+
+```bash
+git clone https://github.com/thisisanimesh01/portfolio.git
+cd portfolio
+```
+
+### Install Dependencies
+
+```bash
+npm install
+```
+
+### Run Development Server
+
+```bash
+npm run dev
+```
+
+### Build for Production
+
+```bash
+npm run build
+```
+
+### Preview Production Build
+
+```bash
+npm run preview
+```
+
+---
+
+## 📬 Contact
+
+📧 Email: [thisisanimesh01@gmail.com](mailto:thisisanimesh01@gmail.com)
+
+💼 LinkedIn:
+https://linkedin.com/in/animesh-yadav-39460b276
+
+💻 GitHub:
+https://github.com/thisisanimesh01
+
+---
+
+## ⭐ Support
+
+If you like this portfolio or find it inspiring:
+
+⭐ Star the repository
+
+🍴 Fork it
+
+🚀 Share it
+
+---
+
+## 📄 License
+
+This project is licensed under the MIT License.
+
+---
+
+### Building AI Agents, Intelligent Systems & Scalable Software.

@@ -9,7 +9,7 @@ const EXPERIENCE = [
       'Developed optimised REST APIs, reducing response latency by 20–30% under load.',
       'Improved overall response performance and cleaned up redundant SQL queries.',
     ],
-    cert: '/certs/cert_bluestock.png',
+    cert: 'certs/cert_bluestock.png',
     certLabel: 'Verify Internship Certificate',
   },
   {
@@ -49,7 +49,7 @@ export default function Experience({ openModal }) {
               {e.cert && (
                 <button
                   className="timeline-cert-btn"
-                  onClick={() => openModal('cert', e.cert)}
+                  onClick={() => openModal('cert', `${import.meta.env.BASE_URL}${e.cert}`)}
                 >
                   🎓 {e.certLabel}
                 </button>

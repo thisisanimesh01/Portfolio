@@ -11,9 +11,9 @@ export default function OpenSource({ openModal }) {
           {/* Left — GitHub snapshot */}
           <div
             className="os-snapshot reveal reveal-delay-1"
-            onClick={() => openModal('cert', '/github_profile.png')}
+            onClick={() => openModal('cert', `${import.meta.env.BASE_URL}github_profile.png`)}
           >
-            <img src="/github_profile.png" alt="Animesh Yadav GitHub Profile" />
+            <img src={`${import.meta.env.BASE_URL}github_profile.png`} alt="Animesh Yadav GitHub Profile" />
             <div className="os-snapshot-overlay">
               Click to view GitHub profile snapshot
             </div>
