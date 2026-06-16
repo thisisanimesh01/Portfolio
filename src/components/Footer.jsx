@@ -4,7 +4,7 @@ export default function Footer({ openModal }) {
       <div className="container">
         <div className="footer-inner">
           <span className="footer-logo">Animesh Yadav</span>
-          <span className="footer-copy">© 2026 · Built with React + Vite · UTC+5:30 (IST)</span>
+          <span className="footer-copy">- thanks for reaching out!</span>
           <nav className="footer-links">
             <a href="#about">About</a>
             <a href="#projects">Projects</a>
