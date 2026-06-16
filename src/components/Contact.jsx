@@ -369,7 +369,7 @@ export default function Contact({ showToast }) {
                   name="name"
                   className={`form-input${errors.name ? ' form-input--error' : ''}`}
                   type="text"
-                  placeholder="Jane Smith"
+                  placeholder="Your Name"
                   autoComplete="name"
                   value={form.name}
                   onChange={handleChange}
@@ -394,7 +394,7 @@ export default function Contact({ showToast }) {
                   name="email"
                   className={`form-input${errors.email ? ' form-input--error' : ''}`}
                   type="email"
-                  placeholder="jane@company.com"
+                  placeholder="your_email@gmail.com"
                   autoComplete="email"
                   value={form.email}
                   onChange={handleChange}
@@ -418,7 +418,7 @@ export default function Contact({ showToast }) {
                   id="cmessage"
                   name="message"
                   className={`form-input${errors.message ? ' form-input--error' : ''}`}
-                  placeholder="Hi Animesh, I'd like to discuss an SDE / AI role at our company..."
+                  placeholder="Hi there! I wanted to reach out because..."
                   value={form.message}
                   onChange={handleChange}
                   disabled={isSending}
