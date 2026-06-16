@@ -1,8 +1,8 @@
-# 🚀 Animesh Yadav Portfolio
+## My Portfolio
 
 A modern, fast, and responsive portfolio website showcasing my work in **Artificial Intelligence, Machine Learning, Backend Development, Systems Programming, and Open Source Software**.
 
-🔗 **Live Site:** [thisisanimesh01.github.io/portfolio](https://thisisanimesh01.github.io/portfolio/)
+🔗 **Live Site:** [thisisanimesh01.github.io/Portfolio](https://thisisanimesh01.github.io/Portfolio/)
 
 ---
 
