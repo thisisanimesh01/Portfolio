@@ -43,7 +43,7 @@ export default function OpenSource({ openModal }) {
             <div className="os-highlights">
               <div className="os-highlight">
                 <span>AI pipelines →</span>
-                <strong>Friday, ResLSTM-BrainNet</strong>
+                <strong>FORGE, Friday, ResLSTM-BrainNet</strong>
               </div>
               <div className="os-highlight">
                 <span>Systems tools →</span>

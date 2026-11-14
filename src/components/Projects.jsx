@@ -18,6 +18,30 @@ const PROJECTS = [
   {
     num: '01',
     flag: 'Flagship',
+    title: 'FORGE',
+    subtitle: 'Autonomous Software Engineering Agent',
+    category: 'Autonomous AI Systems',
+    problem: 'Conversational coding assistants lack deterministic causal verification, sandbox isolation, and cryptographic governance — leading to hallucinated fixes, unchecked regressions, and security risks in enterprise repositories.',
+    solution: 'Engineered an enterprise-grade autonomous software engineering agent that coordinates end-to-end defect investigation, AST-based causal diagnosis, isolated Docker repair execution, and tamper-evident cryptographic governance under strict human approval gates.',
+    architecture: ['Ingestion & Guard', 'Symbol Graph Mapping', 'Evidence Diagnosis', 'Causal Root-Cause', 'Plan Digest Gate', 'Docker Sandbox Execution', 'AST & Quality Radar'],
+    features: [
+      'Deterministic state-machine agent lifecycle',
+      'Cross-file symbol graph & dependency cycle detection',
+      'Multi-hop causal root-cause fault tree analysis',
+      'Container-isolated Docker execution sandbox',
+      'Differential regression & test verification gates',
+      'Tamper-evident SQLite hash-chained audit ledgers',
+      'Local LLM inference via Ollama (fail-closed zero data leakage)',
+    ],
+    challenges: 'Designing a fail-closed execution boundary that prevents arbitrary code execution on host environments while enforcing immutable SHA-256 digest approvals for repair plans.',
+    stack: ['Python', 'Docker', 'SQLite', 'AST Analysis', 'Pydantic', 'Typer', 'Ollama'],
+    impact: 'Automates end-to-end bug reproduction and repair verification in isolated sandboxes with zero host exposure and 100% cryptographically auditable change ledgers.',
+    futureScope: ['Multi-agent consensus verification', 'Automated PR synthesis directly into enterprise VCS', 'Distributed container sandboxing cluster'],
+    link: 'https://github.com/thisisanimesh01/FORGE',
+  },
+  {
+    num: '02',
+    flag: 'Flagship',
     title: 'Friday',
     subtitle: 'Personal AI Assistant',
     category: 'AI Agent Engineering',
@@ -39,7 +63,7 @@ const PROJECTS = [
     link: 'https://github.com/thisisanimesh01/Friday',
   },
   {
-    num: '02',
+    num: '03',
     flag: 'LLM Application',
     title: 'Legal Document Assistant',
     subtitle: 'AI-Powered Legal Analysis Platform',
@@ -62,7 +86,7 @@ const PROJECTS = [
     link: 'https://github.com/thisisanimesh01',
   },
   {
-    num: '03',
+    num: '04',
     flag: 'RAG System',
     title: 'Sports Intelligence Chatbot',
     subtitle: 'Retrieval-Augmented Generation System',
@@ -84,7 +108,7 @@ const PROJECTS = [
     link: 'https://github.com/thisisanimesh01',
   },
   {
-    num: '04',
+    num: '05',
     flag: 'Backend Engineering',
     title: 'ColdConnect',
     subtitle: 'Cold Outreach Automation Platform',
@@ -106,7 +130,7 @@ const PROJECTS = [
     link: 'https://github.com/thisisanimesh01',
   },
   {
-    num: '05',
+    num: '06',
     flag: 'Machine Learning',
     title: 'ResLSTM-BrainNet',
     subtitle: 'Brain Tumor Detection via MRI',
@@ -128,7 +152,7 @@ const PROJECTS = [
     link: 'https://github.com/thisisanimesh01/ResLSTM-BrainNet',
   },
   {
-    num: '06',
+    num: '07',
     flag: 'Compiler Design',
     title: 'Dragon',
     subtitle: 'Custom Programming Language',
@@ -150,7 +174,7 @@ const PROJECTS = [
     link: 'https://github.com/thisisanimesh01',
   },
   {
-    num: '07',
+    num: '08',
     flag: 'Systems Programming',
     title: 'Rust Shell',
     subtitle: 'Unix Shell from Scratch',
@@ -174,6 +198,7 @@ const PROJECTS = [
 ];
 
 const CATEGORY_COLORS = {
+  'Autonomous AI Systems':        { bg: '#f5f3ff', border: '#ddd6fe', text: '#6d28d9' },
   'AI Agent Engineering':         { bg: '#f0fdf4', border: '#bbf7d0', text: '#15803d' },
   'LLM Application':              { bg: '#eff6ff', border: '#bfdbfe', text: '#1d4ed8' },
   'Retrieval-Augmented Generation':{ bg: '#fdf4ff', border: '#e9d5ff', text: '#7e22ce' },
