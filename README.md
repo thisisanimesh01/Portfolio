@@ -6,13 +6,16 @@ A modern, fast, and responsive portfolio website showcasing my work in **Artific
 
 ---
 
-
 ## 📂 Key Projects
-- 🤖 **Friday:** Plugin-based memory-enabled AI assistant & orchestrator.
-- 🧠 **ResLSTM-BrainNet:** Deep learning MRI brain tumor classifier with Grad-CAM.
-- ⚖️ **Legal Doc AI:** RAG-based document summarization and Q&A system.
-- ⚙️ **Rust Shell & Dragon Compiler:** Custom Unix-like shell (Rust) and interpreter (C++).
 
+- 🛡️ **[FORGE](https://github.com/thisisanimesh01/FORGE):** Enterprise-grade autonomous software engineering agent coordinating AST-based causal diagnosis, Docker sandbox verification, and tamper-evident cryptographic governance under human review gates.
+- 🤖 **[Friday](https://github.com/thisisanimesh01/Friday):** Fully autonomous AI assistant with SQLite-backed memory graph, modular plugin hooks, and LLM-driven intent routing.
+- 🧠 **[ResLSTM-BrainNet](https://github.com/thisisanimesh01/ResLSTM-BrainNet):** Hybrid ResNet50 + LSTM deep learning classifier for MRI brain scans achieving 99%+ accuracy with explainable Grad-CAM heatmaps.
+- ⚖️ **[Legal Document Assistant](https://github.com/thisisanimesh01/Legal_Document_Assistant):** Django and OpenRouter-powered legal analysis platform for automated PDF parsing, clause extraction, summarization, and context-aware Q&A.
+- 🏏 **[Sports Intelligence Chatbot](https://github.com/thisisanimesh01/sport_bot):** Retrieval-Augmented Generation (RAG) system with FAISS vector database and Hugging Face embeddings for real-time domain-grounded sports queries.
+- 📬 **[ColdConnect](https://github.com/thisisanimesh01/coldconnect):** Automated cold outreach platform orchestrating React, Node.js, and FastAPI with Gmail API OAuth and open-rate pixel tracking.
+- ⚙️ **[Rust Shell](https://github.com/thisisanimesh01/My-Rust-Shell):** Zero-dependency Unix-like shell in Rust featuring command parsing, system call process spawning, piping, redirection, and signal handling.
+- 🐉 **[Dragon](https://github.com/thisisanimesh01/Dragon):** Custom programming language built from scratch in C++ featuring a hand-written lexer, recursive-descent parser, AST generator, and tree-walking interpreter.
 
 ## 📬 Contact & Links
 - **Email:** [thisisanimesh01@gmail.com](mailto:thisisanimesh01@gmail.com)
@@ -118,4 +121,3 @@ This runs `vite build` (which reads your `.env`) and then pushes the `dist/` fol
 ---
 
 *Licensed under the [MIT License](LICENSE).*
-
